@@ -28,7 +28,7 @@ This thesis extends Engression to temporal forecasting through:
 
 3. **Comprehensive Benchmarking**: Systematic evaluation across synthetic and real-world datasets:
    - **vs Deterministic counterparts**: Competitive mean predictions with superior extreme event forecasting capabilities
-   - **vs Baseline Engression**: Context-dependent improvements including enhanced tail quantile estimation in sequential settings and adaptive uncertainty quantification in heteroskedastic environments
+   - **vs Baseline Engression**: Context-dependent improvements including enhanced tail quantile estimation and adaptive uncertainty quantification in heteroskedastic environments
 
 ## Repository Structure
 ```
