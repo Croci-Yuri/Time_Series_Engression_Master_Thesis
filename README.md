@@ -3,7 +3,9 @@
 **Modeling Conditional Distributions with Input-Dependent Noise and Temporal Structure**.
 
 Master's Thesis, University of Geneva (2025)  
-Author: Yuri Croci | Supervisor: Prof. Dr. Sebastian Engelke  <br>
+Author: Yuri Croci   
+Supervisor: Prof. Dr. Sebastian Engelke  
+
 📄 **[Full Thesis](Thesis_and_Presentation/CROCI_Yuri_master_thesis.pdf)** | 📊 **[Defense Slides](Thesis_and_Presentation/CROCI_YURI_Defense.pdf)**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
