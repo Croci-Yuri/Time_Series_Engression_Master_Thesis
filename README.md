@@ -14,9 +14,16 @@ Supervisor: Prof. Dr. Sebastian Engelke
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
 
-
 ## Overview
-This repository contains the implementation of my master's thesis extending **Engression** to time series forecasting. Engression is a distributional regression framework that models full conditional distributions P(Y|X) through pre-additive noise injection, enabling reliable uncertainty quantification and extrapolation beyond training support. My work extends the original framework to temporal data through two main contributions: (1) temporal encoding using GRU architectures with attention-based pooling to capture sequential dependencies, and (2) heteroskedastic noise modeling where prediction uncertainty adapts based on input conditions. The extensions are evaluated through systematic comparison against deterministic baselines and standard Engression variants on both synthetic benchmarks and real-world river discharge data.
+This repository contains the implementation of my master's thesis extending **Engression** to time series forecasting. Engression is a distributional regression framework that models full conditional distributions P(Y|X) through pre-additive noise injection, enabling reliable uncertainty quantification and extrapolation beyond the training support. My work extends the original framework to temporal data through two main contributions:
+
+- Temporal encoding using GRU architectures with attention-based pooling to capture sequential dependencies.  
+- Heteroskedastic noise modeling where prediction uncertainty adapts based on input conditions.
+
+These extensions are evaluated through a systematic comparison against deterministic baselines and standard Engression variants on both synthetic benchmarks and real-world river discharge data.
+
+
+<br>
 
 
 <p align="center">
@@ -25,6 +32,8 @@ This repository contains the implementation of my master's thesis extending **En
 
 ## Key Findings
 The proposed extensions demonstrated competitive mean predictions compared to deterministic baselines while providing superior extreme event forecasting capabilities. Key improvements include enhanced tail quantile estimation (10th and 90th percentiles) and adaptive uncertainty quantification in heteroskedastic environments where prediction confidence varies over time. A case study analysis on the 2005 Swiss flood event was conducted to evaluate the practical applicability to real-world extreme event prediction.
+
+<br>
 
 <p align="center">
   <img src="Thesis_Figures/Simulation_Study/stochastic_sim_quantiles_2x2.png" width="600">
@@ -42,6 +51,7 @@ These datasets are available to academics upon request from:
 ## Repository Structure
 
 ```
+Time_Series_Engression_Master_Thesis/
 ├── Grid_Search_results/      # Hyperparameter optimization across all models and experiments
 ├── Models/                   # All model architectures (Engression variants + deterministic baselines)
 ├── Modules/                  # Core implementation modules
