@@ -10,11 +10,22 @@ Author: Yuri Croci | Supervisor: Prof. Dr. Sebastian Engelke
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 
+
+
 ## Overview
 This repository contains the implementation of my master's thesis extending **Engression** to time series forecasting. Engression is a distributional regression framework that models full conditional distributions P(Y|X) through pre-additive noise injection, enabling reliable uncertainty quantification and extrapolation beyond training support. My work extends the original framework to temporal data through two main contributions: (1) temporal encoding using GRU architectures with attention-based pooling to capture sequential dependencies, and (2) heteroskedastic noise modeling where prediction uncertainty adapts based on input conditions. The extensions are evaluated through systematic comparison against deterministic baselines and standard Engression variants on both synthetic benchmarks and real-world river discharge data.
 
+
+<p align="center">
+  <img src="Thesis_Figures/Architecture_diagrams/H_SML_Engression.png" width="600">
+</p>
+
 ## Key Findings
 The proposed extensions demonstrated competitive mean predictions compared to deterministic baselines while providing superior extreme event forecasting capabilities. Key improvements include enhanced tail quantile estimation (10th and 90th percentiles) and adaptive uncertainty quantification in heteroskedastic environments where prediction confidence varies over time. A case study analysis on the 2005 Swiss flood event was conducted to evaluate the practical applicability to real-world extreme event prediction.
+
+<p align="center">
+  <img src="Thesis_Figures/Simulation_Study/stochastic_sim_quantiles_2x2.png" width="600">
+</p>
 
 ## Dataset
 
